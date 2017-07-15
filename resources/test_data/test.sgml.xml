@@ -1,0 +1,410 @@
+<TRAINING_SET>
+<DOC nid="2">
+<TEXT>
+<P>
+In modern digital world, electronic products are widely used in daily lives such as Smart phones, computers and etc. In work places, electronic devices such as computers are also inevitable to use to increase the productivity of the corporation. The convenience and high efficiency of using electronic products is being noticed by people worldwide. Some people started to think if electronic products can be further operated to more advanced utilization and replace human beings for better performances. Surveillance technology such as RFID (radio-frequency identification) is one type of examples that has currently been implemented. In this essay, I will discuss that if surveillance technology such as RFID (radio-frequency identification) should be used or not to track people. Personally, I agree to a large extent that surveillance technology such as RFID should be used to track people.
+</P>
+<P>
+Surveillance technology such as RFID can be operated twenty-four hours with the absence of operators to track done every detail about human activities. For instance, in militaries which are of high importance, surveillance technology is essential as it is a way to provide undeniable evidences if anything are fault. In supermarkets where it is difficult to catch stealers, surveillance technology which makes records that can be replayed or detect stealers on the spot are superior to use. The high accuracy in utilizing surveillance technology eliminates the amount of disagreements among people. If people are aware of the existence of surveillance, the chance for them to follow rules and orders is high. It is useful as it reduces the chances of wrong doings that may occur. Therefore, surveillance technology makes our society more ordered.
+</P>
+<P>
+Risks can be analyzed if there is a record of what was happened in the past. In late nineteenth century, there was a severe air crash happening at Miami international airport. The air cargo of the Valujet plane was on fire after the plane had taken off. Sooner or later, the electric systems were short circuited as a result that the airplane was out of control and nose diving to the ground with extremely high speed. All passengers and pilots were died. After finding and analyzing the black box of the Valujet after the incidence, police investigators found out reasons for causing this severe incidence. Surveillance technology can be used to detect very risky events and prevent its happening in the future, hence to save more lives. In addition, if surveillance technology is even better developed, it can be used to detect the problem before the real accidence has happened.
+</P>
+<P>
+However, the dark side of using surveillance technology is that it results in the invasion of privacy. People under supervision are under high pressure to perform naturally. People are less likely to enjoy life under surveillance. Therefore, surveillance technology provides convenience to the society but makes more inconvenience to individuals. Therefore, surveillance technology can be used but the use of surveillance should be modified in such a way that individuals are less affected in normal life. In general, surveillance technology benefits the society and should be applied with the consideration of individuals' life.
+</P>
+</TEXT>
+<ANNOTATION teacher_id="6">
+<MISTAKE start_par="0" start_off="3" end_par="0" end_off="9">
+<TYPE>ArtOrDet</TYPE>
+<CORRECTION>the modern</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="0" start_off="70" end_par="0" end_off="75">
+<TYPE>Nn</TYPE>
+<CORRECTION>life</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="0" start_off="84" end_par="0" end_off="89">
+<TYPE>Mec</TYPE>
+<CORRECTION>smart</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="0" start_off="120" end_par="0" end_off="124">
+<TYPE>ArtOrDet</TYPE>
+<CORRECTION>the workplace</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="0" start_off="120" end_par="0" end_off="131">
+<TYPE>Mec</TYPE>
+<CORRECTION></CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="0" start_off="144" end_par="0" end_off="151">
+<TYPE>Mec</TYPE>
+<CORRECTION>devices,</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="0" start_off="160" end_par="0" end_off="169">
+<TYPE>Mec</TYPE>
+<CORRECTION>computers,</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="0" start_off="190" end_par="0" end_off="199">
+<TYPE>Rloc-</TYPE>
+<CORRECTION>to</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="0" start_off="311" end_par="0" end_off="319">
+<TYPE>Vt</TYPE>
+<CORRECTION>has been</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="0" start_off="361" end_par="0" end_off="368">
+<TYPE>Vt</TYPE>
+<CORRECTION>have started</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="0" start_off="372" end_par="0" end_off="377">
+<TYPE>Wci</TYPE>
+<CORRECTION>wonder</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="0" start_off="405" end_par="0" end_off="453">
+<TYPE>Um</TYPE>
+<CORRECTION></CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="0" start_off="458" end_par="0" end_off="502">
+<TYPE>Wci</TYPE>
+<CORRECTION>outperform human beings</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="0" start_off="517" end_par="0" end_off="527">
+<TYPE>Mec</TYPE>
+<CORRECTION>technology,</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="0" start_off="558" end_par="0" end_off="573">
+<TYPE>Mec</TYPE>
+<CORRECTION>identification),</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="0" start_off="581" end_par="0" end_off="588">
+<TYPE>Rloc-</TYPE>
+<CORRECTION></CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="0" start_off="589" end_par="0" end_off="597">
+<TYPE>Nn</TYPE>
+<CORRECTION>example</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="0" start_off="603" end_par="0" end_off="621">
+<TYPE>Vt</TYPE>
+<CORRECTION>is being currently</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="0" start_off="603" end_par="0" end_off="621">
+<TYPE>WOadv</TYPE>
+<CORRECTION></CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="0" start_off="665" end_par="0" end_off="672">
+<TYPE>Trans</TYPE>
+<CORRECTION>whether</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="0" start_off="665" end_par="0" end_off="672">
+<TYPE>Ssub</TYPE>
+<CORRECTION></CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="0" start_off="686" end_par="0" end_off="696">
+<TYPE>Mec</TYPE>
+<CORRECTION>technology,</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="0" start_off="727" end_par="0" end_off="742">
+<TYPE>Mec</TYPE>
+<CORRECTION>identification),</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="0" start_off="761" end_par="0" end_off="764">
+<TYPE>V0</TYPE>
+<CORRECTION>not used</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="0" start_off="838" end_par="0" end_off="848">
+<TYPE>Mec</TYPE>
+<CORRECTION>technology,</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="0" start_off="857" end_par="0" end_off="861">
+<TYPE>Mec</TYPE>
+<CORRECTION>RFID,</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="13" end_par="1" end_off="23">
+<TYPE>Mec</TYPE>
+<CORRECTION>technology,</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="32" end_par="1" end_off="36">
+<TYPE>Mec</TYPE>
+<CORRECTION>RFID,</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="71" end_par="1" end_off="75">
+<TYPE>Prep</TYPE>
+<CORRECTION>without</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="76" end_par="1" end_off="90">
+<TYPE>Rloc-</TYPE>
+<CORRECTION></CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="104" end_par="1" end_off="114">
+<TYPE>Wci</TYPE>
+<CORRECTION>track</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="166" end_par="1" end_off="169">
+<TYPE>ArtOrDet</TYPE>
+<CORRECTION>in the</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="169" end_par="1" end_off="179">
+<TYPE>Nn</TYPE>
+<CORRECTION>military,</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="180" end_par="1" end_off="208">
+<TYPE>Um</TYPE>
+<CORRECTION></CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="284" end_par="1" end_off="293">
+<TYPE>Nn</TYPE>
+<CORRECTION>evidence</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="306" end_par="1" end_off="309">
+<TYPE>SVA</TYPE>
+<CORRECTION>is</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="310" end_par="1" end_off="315">
+<TYPE>Prep</TYPE>
+<CORRECTION>at fault</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="320" end_par="1" end_off="332">
+<TYPE>Mec</TYPE>
+<CORRECTION>supermarkets,</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="364" end_par="1" end_off="372">
+<TYPE>Wci</TYPE>
+<CORRECTION>thieves</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="387" end_par="1" end_off="397">
+<TYPE>Mec</TYPE>
+<CORRECTION>technology,</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="442" end_par="1" end_off="448">
+<TYPE>SVA</TYPE>
+<CORRECTION>detects</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="449" end_par="1" end_off="457">
+<TYPE>Wci</TYPE>
+<CORRECTION>theives</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="465" end_par="1" end_off="469">
+<TYPE>Mec</TYPE>
+<CORRECTION>spot,</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="470" end_par="1" end_off="474">
+<TYPE>SVA</TYPE>
+<CORRECTION>is</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="474" end_par="1" end_off="489">
+<TYPE>Wci</TYPE>
+<CORRECTION>beneficial</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="509" end_par="1" end_off="521">
+<TYPE>Prep</TYPE>
+<CORRECTION>of</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="561" end_par="1" end_off="567">
+<TYPE>Wci</TYPE>
+<CORRECTION>number</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="657" end_par="1" end_off="663">
+<TYPE>Wci</TYPE>
+<CORRECTION>possibility</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="664" end_par="1" end_off="675">
+<TYPE>Vm</TYPE>
+<CORRECTION>they would</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="751" end_par="1" end_off="763">
+<TYPE>Nn</TYPE>
+<CORRECTION>wrongdoing</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="751" end_par="1" end_off="763">
+<TYPE>Mec</TYPE>
+<CORRECTION></CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="764" end_par="1" end_off="778">
+<TYPE>Ssub</TYPE>
+<CORRECTION>occurring</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="769" end_par="1" end_off="778">
+<TYPE>Vm</TYPE>
+<CORRECTION>
+</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="773" end_par="1" end_off="778">
+<TYPE>Vform</TYPE>
+<CORRECTION></CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="838" end_par="1" end_off="845">
+<TYPE>Wci</TYPE>
+<CORRECTION>law abiding</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="51" end_par="2" end_off="63">
+<TYPE>Vform</TYPE>
+<CORRECTION>happened</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="80" end_par="2" end_off="84">
+<TYPE>ArtOrDet</TYPE>
+<CORRECTION>the late</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="105" end_par="2" end_off="143">
+<TYPE>WOinc</TYPE>
+<CORRECTION>a severe air crash occurred</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="153" end_par="2" end_off="166">
+<TYPE>Mec</TYPE>
+<CORRECTION>International</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="176" end_par="2" end_off="222">
+<TYPE>WOinc</TYPE>
+<CORRECTION>A fire started in the air cargo to a Valujet plane</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="193" end_par="2" end_off="196">
+<TYPE>ArtOrDet</TYPE>
+<CORRECTION>
+</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="254" end_par="2" end_off="274">
+<TYPE>Trans</TYPE>
+<CORRECTION>The</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="292" end_par="2" end_off="312">
+<TYPE>Vform</TYPE>
+<CORRECTION>short circuited</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="313" end_par="2" end_off="315">
+<TYPE>Prep</TYPE>
+<CORRECTION>with</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="316" end_par="2" end_off="317">
+<TYPE>ArtOrDet</TYPE>
+<CORRECTION>the</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="366" end_par="2" end_off="377">
+<TYPE>Vt</TYPE>
+<CORRECTION></CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="366" end_par="2" end_off="377">
+<TYPE>Mec</TYPE>
+<CORRECTION>nosedived</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="392" end_par="2" end_off="396">
+<TYPE>Prep</TYPE>
+<CORRECTION>at</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="445" end_par="2" end_off="454">
+<TYPE>Vform</TYPE>
+<CORRECTION>died</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="505" end_par="2" end_off="512">
+<TYPE>Wci</TYPE>
+<CORRECTION>plane</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="523" end_par="2" end_off="532">
+<TYPE>Wform</TYPE>
+<CORRECTION>incident</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="555" end_par="2" end_off="565">
+<TYPE>Prep</TYPE>
+<CORRECTION>found</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="565" end_par="2" end_off="572">
+<TYPE>ArtOrDet</TYPE>
+<CORRECTION>the reasons</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="573" end_par="2" end_off="576">
+<TYPE>Ssub</TYPE>
+<CORRECTION>that</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="577" end_par="2" end_off="584">
+<TYPE>Vform</TYPE>
+<CORRECTION>caused</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="590" end_par="2" end_off="597">
+<TYPE>Wci</TYPE>
+<CORRECTION>serious</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="597" end_par="2" end_off="606">
+<TYPE>Wform</TYPE>
+<CORRECTION>incident</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="632" end_par="2" end_off="635">
+<TYPE>Vm</TYPE>
+<CORRECTION>could</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="684" end_par="2" end_off="687">
+<TYPE>Pform</TYPE>
+<CORRECTION>them</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="684" end_par="2" end_off="687">
+<TYPE>Pref</TYPE>
+<CORRECTION>them</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="688" end_par="2" end_off="697">
+<TYPE>Prep</TYPE>
+<CORRECTION>from happening</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="719" end_par="2" end_off="726">
+<TYPE>Vform</TYPE>
+<CORRECTION>saving</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="779" end_par="2" end_off="781">
+<TYPE>WOinc</TYPE>
+<CORRECTION>becomes</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="808" end_par="2" end_off="811">
+<TYPE>Vm</TYPE>
+<CORRECTION>could</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="830" end_par="2" end_off="834">
+<TYPE>ArtOrDet</TYPE>
+<CORRECTION></CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="834" end_par="2" end_off="841">
+<TYPE>Nn</TYPE>
+<CORRECTION>problems</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="849" end_par="2" end_off="858">
+<TYPE>ArtOrDet</TYPE>
+<CORRECTION>real</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="858" end_par="2" end_off="867">
+<TYPE>Wform</TYPE>
+<CORRECTION>accidents</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="868" end_par="2" end_off="880">
+<TYPE>Vt</TYPE>
+<CORRECTION>occurs</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="872" end_par="2" end_off="880">
+<TYPE>Wci</TYPE>
+<CORRECTION></CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="3" start_off="78" end_par="3" end_off="90">
+<TYPE>ArtOrDet</TYPE>
+<CORRECTION>invasion</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="3" start_off="290" end_par="3" end_off="301">
+<TYPE>ArtOrDet</TYPE>
+<CORRECTION>society</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="3" start_off="306" end_par="3" end_off="311">
+<TYPE>Wci</TYPE>
+<CORRECTION>causes</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="3" start_off="551" end_par="3" end_off="562">
+<TYPE>ArtOrDet</TYPE>
+<CORRECTION>society</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="3" start_off="577" end_par="3" end_off="584">
+<TYPE>Wci</TYPE>
+<CORRECTION>used</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="3" start_off="585" end_par="3" end_off="610">
+<TYPE>Um</TYPE>
+<CORRECTION></CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="3" start_off="624" end_par="3" end_off="628">
+<TYPE>Nn</TYPE>
+<CORRECTION>lives</CORRECTION>
+</MISTAKE>
+</ANNOTATION>
+</DOC>
+</TRAINING_SET>
