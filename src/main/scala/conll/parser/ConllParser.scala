@@ -2,15 +2,16 @@ package conll.parser
 
 import conll.model.{ConllCorrection, ErrorMessage, Paragraph, PreprocessedEssay}
 
-import scala.io.Source
+import java.io.File
 import scala.xml.NodeSeq
 import xml.XML.loadFile
 
 class ConllParser private (filepath: String) {
+  require(new File(filepath).isFile)
   import ConllParser._
-  private val source = Source.fromFile(filepath)
+
   def parse(): Either[ErrorMessage, List[PreprocessedEssay]] = {
-    val pairs = getPairs()
+    val pairs = loadEssayCorrectionPairs()
     try {
       Right(pairs.map(makePreprocessedEssay))
     } catch {
@@ -18,9 +19,9 @@ class ConllParser private (filepath: String) {
     }
   }
 
-  private[conll] def getXMLFile(): xml.NodeSeq = loadFile(filepath)
-  private[conll] def getEntries(): xml.NodeSeq = getXMLFile() \\ "DOC"
-  private[conll] def getPairs(): List[(NodeSeq, NodeSeq)] = extractFrom(getEntries())(getPair)
+  private[conll] def loadEssayCorrectionPairs(): List[(NodeSeq, NodeSeq)] = extractFrom(loadEntries())(getPair)
+  private[conll] def loadEntries(): xml.NodeSeq = loadXMLFile() \\ "DOC"
+  private[conll] def loadXMLFile(): xml.NodeSeq = loadFile(filepath)
 
   private[conll] def makePreprocessedEssay(paragraphsCorrections: (NodeSeq, NodeSeq)): PreprocessedEssay = {
     val (paragraphs, corrections) = paragraphsCorrections

@@ -16,8 +16,8 @@ class ConllParserSpec extends FlatSpec with Matchers {
     ConllParser(testfile)
   }
 
-  it should "throw FileNotFoundException if file not found" in {
-    a [FileNotFoundException] should be thrownBy {
+  it should "throw IAE if file not found or it is not file" in {
+    a [IllegalArgumentException] should be thrownBy {
       ConllParser("file.invalid")
     }
   }
@@ -27,34 +27,49 @@ class ConllParserSpec extends FlatSpec with Matchers {
     val preprocessedEssays: Either[ErrorMessage, List[PreprocessedEssay]] = parser.parse()
   }
 
-  it should "return an xml.Elem representing the content of the file" in {
-    val xmlFile: xml.NodeSeq = parser.getXMLFile()
+  it should "return an xml.Elem representing the content of the file when loadXMLFile()" in {
+    val xmlFile: xml.NodeSeq = parser.loadXMLFile()
   }
 
-  it should "return an xml.NodeSeq representing the entries of the file when getEntries()" in {
-    val entries: xml.NodeSeq = parser.getEntries()
+  it should "return an xml.NodeSeq representing the entries of the file when loadEntries()" in {
+    val entries: xml.NodeSeq = parser.loadEntries()
   }
 
   it should "return 1 entry given testfile" in {
-    parser.getEntries().size should be (1)
+    parser.loadEntries().size should be (1)
   }
 
-  it should "return a List[(paragraphs: xml.NodeSeq, corrections: xml.NodeSeq)] when getPairs()" in {
-    val essays: List[(NodeSeq, NodeSeq)] = parser.getPairs()
+  it should "return a List[(paragraphs: xml.NodeSeq, corrections: xml.NodeSeq)] when loadPairs()" in {
+    val essays: List[(NodeSeq, NodeSeq)] = parser.loadEssayCorrectionPairs()
   }
 
   it should "return 4 paragraphs for first essay given testfile" in {
-    val (paragraphs, _) = parser.getPairs().head
-    paragraphs.size should be (4)
+    val (paragraphs, _) = parser.loadEssayCorrectionPairs().head
+    paragraphs should have size 4
   }
 
   it should "return 97 correction for the first essay" in {
-    val (_, corrections) = parser.getPairs().head
-    corrections.size should be (97)
+    val (_, corrections) = parser.loadEssayCorrectionPairs().head
+    corrections should have size 97
   }
 
   it should "return a PreprocessedEssay given a (NodeSeq, NodeSeq)" in {
-    val essay: (NodeSeq, NodeSeq) = parser.getPairs().head
+    val essay: (NodeSeq, NodeSeq) = parser.loadEssayCorrectionPairs().head
     val preprocessedEssay: PreprocessedEssay = parser.makePreprocessedEssay(essay)
   }
+
+  it should "return 1 PreprocessedEssay given testfile" in {
+    val preprocessedEssays = parser.parse()
+    assert(preprocessedEssays.forall(_.size == 1))
+  }
+
+  it should "return the corrections sorted" in {
+    val preprocessedEssay = parser.parse()
+    val corrections = preprocessedEssay match {
+      case Right(essay) => essay.head.corrections
+      case _ => List.empty
+    }
+    corrections shouldBe sorted
+  }
+
 }
