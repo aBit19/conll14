@@ -6,7 +6,7 @@ class PreprocessedEssaySpec extends FlatSpec with Matchers {
 
   "A PreprocessedEssay" should "accept a List of string paragraphs representing the essay and a list of " +
     "ConllCorrections of that essay as annotation" in {
-    val preprocessedEssay = PreprocessedEssay(List.empty[Paragraph], List.empty[ConllCorrection])
+    PreprocessedEssay(List.empty[Paragraph], List.empty[ConllCorrection])
   }
 
   it should "throw an NPE in case null is given as list of Paragraphs" in {
@@ -19,5 +19,9 @@ class PreprocessedEssaySpec extends FlatSpec with Matchers {
     a [NullPointerException] should be thrownBy {
       PreprocessedEssay(List.empty, null)
     }
+  }
+
+  it should "be able to apply its corrections and return an CorrectedEssay" in {
+    val essay: CorrectedEssay = PreprocessedEssay(List.empty, List.empty).applyCorrections
   }
 }

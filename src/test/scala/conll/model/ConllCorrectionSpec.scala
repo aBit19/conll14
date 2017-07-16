@@ -44,4 +44,5 @@ class ConllCorrectionSpec extends FlatSpec with Matchers {
   it should "extend ordered trait" in {
     val correction: Ordered[ConllCorrection] = ConllCorrection(0, (1, 3), "")
   }
+
 }

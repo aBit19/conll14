@@ -4,7 +4,7 @@ package conll.parser
 import org.scalatest.{ FlatSpec, Matchers}
 import java.io.File
 
-import conll.model.{ConllCorrection, ErrorMessage, PreprocessedEssay}
+import conll.model.{ErrorMessage, PreprocessedEssay}
 
 import scala.xml.NodeSeq
 class ConllParserSpec extends FlatSpec with Matchers {
@@ -71,5 +71,4 @@ class ConllParserSpec extends FlatSpec with Matchers {
     }
     corrections shouldBe sorted
   }
-
 }
