@@ -65,15 +65,6 @@ class ConllParserSpec extends FlatSpec with Matchers {
     preprocessedEssays should have length 1
   }
 
-  it should "return the corrections sorted" in {
-    val preprocessedEssay = parser.parse()
-    val corrections = preprocessedEssay match {
-      case Right(essay) :: _ => essay.corrections
-      case _ => List.empty
-    }
-    corrections shouldBe sorted
-  }
-
   it should "return a size of two PreprocessedEssays given testFile2" in {
     val preprocessed = ConllParser(testFile2).parse()
     preprocessed should have size 2
