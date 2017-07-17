@@ -1,8 +1,9 @@
 package conll.model
-class PreprocessedEssay private(val paragraphs: List[Paragraph], val corrections: List[ConllCorrection]) {
-  override def toString: String = paragraphs.toString()
 
-  def applyCorrections: CorrectedEssay = new CorrectedEssay(List.empty)
+class PreprocessedEssay private(val paragraphs: List[Paragraph], val corrections: List[ConllCorrection]) {
+  override val toString : String = (paragraphs :\ "") (_.trim + _.trim)
+  private def corrector: Corrector = Corrector(this)
+  def applyCorrections = corrector.applyCorrections
 }
 
 object PreprocessedEssay {

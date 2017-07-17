@@ -11,6 +11,6 @@ case class ConllCorrection(paragraph: Int, errorSpan: Span, correction: String) 
       paragraph - that.paragraph
     else if (errorSpan._1 != that.errorSpan._1)
       errorSpan._1 - that.errorSpan._1
-    else errorSpan._2 - errorSpan._2
+    else correction.compareTo(that.correction)
 }
 
