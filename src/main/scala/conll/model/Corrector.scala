@@ -16,7 +16,7 @@ private[conll] class Corrector private(preprocessedEssay: PreprocessedEssay) {
   }
 
   private def correctEssay(): List[Either[ErrorMessage, Paragraph]] =
-    preprocessedEssay.paragraphsCorrections.map(pair => Corrector.correctParagraph(pair._1, pair._2.head, pair._2.tail))
+    preprocessedEssay.paragraphsCorrections.map(pair => Corrector.correctParagraph(pair._1, pair._2))
 
 }
 
@@ -24,6 +24,11 @@ private[conll] object Corrector {
   def apply(preprocessedEssay: PreprocessedEssay): Corrector = new Corrector(preprocessedEssay)
   def makeStringEssayFromParagraphs(list: List[Paragraph]): String = (list:\ "")(_ .trim + _.trim)
 
+  private[conll] def correctParagraph(paragraph: Paragraph, list: List[ConllCorrection]): Either[ErrorMessage, Paragraph] = {
+    if (list.isEmpty)
+      Right(paragraph)
+    else correctParagraph(paragraph, list.head, list.tail)
+  }
   private def correctParagraph(paragraph: Paragraph,
                                headCorrection: ConllCorrection,
                                corrections: List[ConllCorrection]):
@@ -45,19 +50,23 @@ private[conll] object Corrector {
   private def handleCorrectionSpanningTwoParagraphs(paragraph: Paragraph, headCorrection: ConllCorrection,
                                                      stringBuilder: StringBuilder): Unit = {
     applyCorrectionMutatingStringBuilder(
-      ConllCorrection(0, (headCorrection.errorSpan._1, paragraph.length), headCorrection.correction),
+      ConllCorrection(0, (headCorrection.errorSpan._1, paragraph.length - 1), headCorrection.correction),
       stringBuilder)
   }
 
   private def applyCorrectionMutatingStringBuilder(conllCorrection: ConllCorrection, stringBuilder: StringBuilder): Unit = {
-    val (start_off, start_end) = conllCorrection.errorSpan
-    stringBuilder.delete(start_off, start_end)
-    stringBuilder.insert(start_off, " " + conllCorrection.correction)
+    try {
+      val (start_off, start_end) = conllCorrection.errorSpan
+      stringBuilder.delete(start_off, start_end)
+      stringBuilder.insert(start_off, " " + conllCorrection.correction)
+    } catch  {
+      case ex: Exception => new IllegalArgumentException(s"${conllCorrection.errorSpan} - ${conllCorrection.correction}")
+    }
   }
 
   private def concatParagraphs(list: List[Either[ErrorMessage, Paragraph]]): String = {
     //Assumption the list contains only Right
-    ("" /: list) ((paragraph: Paragraph, either) => either.getOrElse("") + paragraph)
+    ("" /: list) ((paragraph: Paragraph, either) => paragraph + either.getOrElse(""))
   }
 
   private def getErrors(either: List[Either[ErrorMessage, Paragraph]]): List[ErrorMessage] = {

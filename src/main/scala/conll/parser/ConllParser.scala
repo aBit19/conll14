@@ -33,9 +33,10 @@ class ConllParser private (filepath: String) {
     val (paragraphsXML, correctionsXML) = paragraphsCorrections
     val (paragraphs, corrections) = (extractParagraphsFrom(paragraphsXML), extractConllCorrectionsFrom(correctionsXML))
     val paragraphIdxToCorrection: Map[Int, List[ConllCorrection]] = corrections.groupBy(_.paragraph)
-    val paragraphCorrectionsPair: List[(Paragraph, List[ConllCorrection])] =
-      paragraphs.zipWithIndex.map(pair => (pair._1, cleanCorrections(paragraphIdxToCorrection(pair._2))))
-   PreprocessedEssay(paragraphCorrectionsPair)
+    val paragraphToItsIndex: List[(Paragraph, Int)] = paragraphs.zipWithIndex
+    val pairs: List[(Paragraph, List[ConllCorrection])] = paragraphToItsIndex
+      .map(p => (p._1, cleanCorrections(paragraphIdxToCorrection.getOrElse(p._2, List.empty))))
+    PreprocessedEssay(pairs)
   }
 }
 

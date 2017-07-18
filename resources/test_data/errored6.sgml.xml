@@ -1,0 +1,315 @@
+<TRAINING_SET>
+<DOC nid="6">
+<TEXT>
+<P>
+RFID is used in many forms for example, transportation, homes and even offices. Over these years, it had help humans to improve the accessibility in the forms of cards to gain access to certain places. Other than using it on these areas, it is also been used as human implant or as a form of products. These implants and products are also been used as surveillance tools. For using as a surveillance tool, it could also be used in terms of surveys and statistics. There are also medical tools that are more of implant into the human body for the basic medical research. Moreover, the use of RFID chip in tracking clothes were also very common sight in the service industry for the huge number of clothing to be identified and tracked the location of it at any one point.
+</P>
+<P>
+When RFID had been used in the transportation needs in the form of ez-link cards, the ability to gain faster and easier access of the transportation needs had been seen over the years. This from also can be used as a tracking device where the places a person visited for the past few trips were all recorded by the system and the cards. This form of tracking is not harmful and disturbing to the society as it could be used to fight crimes to maintain law and order. As this information is been well keep by the operators where they encrypt the data and used it in the proper form. This also prevents the chances of normal hackers to get this information that were recorded for proper usages are misused for unlawful usages.
+</P>
+<P>
+Moreover, the use of the RFID for medical research is also been widely used in many countries. These chips were also implanted under the human skin where it also helps to store the basic information of the person in it. This form of tools does not harm but it helps in the ability to identify any person who is not carrying any identification when comes to emergency. This important information may be needed to save the person life where their medical history was all recorded in the chip.
+</P>
+<P>
+Additionally, the service industry were also using it to track its clothes that were been used by their employees. This is a scene seen in Resort World Sentosa. The clothes were all implanted with an RFID tracking chip for easy identification and recording of the whereabouts the clothes is at. As their clothes were mass collected and washed by an external company, the ability to have a tracking system to know the whereabouts of their clothing helps in terms of the logistical hassle.
+</P>
+<P>
+Therefore, the usages of RFID chips were more useful to help the human in the basic needs or task that is required. This form of tracking were also not harmful to any person where they much of these information were all used for helping a person then disrupt the lives of human race. Therefore I agree that the use of the RFID technology in tracking any person or product that would help the human race which also been mention above.
+</P>
+</TEXT>
+<ANNOTATION teacher_id="6">
+<MISTAKE start_par="0" start_off="21" end_par="0" end_off="26">
+<TYPE>Wci</TYPE>
+<CORRECTION>places</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="0" start_off="85" end_par="0" end_off="90">
+<TYPE>ArtOrDet</TYPE>
+<CORRECTION>the</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="0" start_off="101" end_par="0" end_off="104">
+<TYPE>Vt</TYPE>
+<CORRECTION>has</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="0" start_off="105" end_par="0" end_off="109">
+<TYPE>Vform</TYPE>
+<CORRECTION>helped</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="0" start_off="128" end_par="0" end_off="145">
+<TYPE>ArtOrDet</TYPE>
+<CORRECTION>accessibility</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="0" start_off="153" end_par="0" end_off="158">
+<TYPE>Nn</TYPE>
+<CORRECTION>form</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="0" start_off="222" end_par="0" end_off="224">
+<TYPE>Prep</TYPE>
+<CORRECTION>in</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="0" start_off="262" end_par="0" end_off="267">
+<TYPE>ArtOrDet</TYPE>
+<CORRECTION>a human</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="0" start_off="282" end_par="0" end_off="292">
+<TYPE>Rloc-</TYPE>
+<CORRECTION>a</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="0" start_off="292" end_par="0" end_off="300">
+<TYPE>Nn</TYPE>
+<CORRECTION>product</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="0" start_off="330" end_par="0" end_off="333">
+<TYPE>Vt</TYPE>
+<CORRECTION>have</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="0" start_off="372" end_par="0" end_off="384">
+<TYPE>Ssub</TYPE>
+<CORRECTION>As</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="0" start_off="510" end_par="0" end_off="517">
+<TYPE>ArtOrDet</TYPE>
+<CORRECTION>an implant</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="0" start_off="542" end_par="0" end_off="551">
+<TYPE>ArtOrDet</TYPE>
+<CORRECTION>basic</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="0" start_off="596" end_par="0" end_off="600">
+<TYPE>Nn</TYPE>
+<CORRECTION>chips</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="0" start_off="621" end_par="0" end_off="625">
+<TYPE>Vt</TYPE>
+<CORRECTION>is</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="0" start_off="621" end_par="0" end_off="625">
+<TYPE>SVA</TYPE>
+<CORRECTION></CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="0" start_off="664" end_par="0" end_off="673">
+<TYPE>Trans</TYPE>
+<CORRECTION>industry becaue</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="0" start_off="673" end_par="0" end_off="676">
+<TYPE>Prep</TYPE>
+<CORRECTION>of</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="0" start_off="734" end_par="0" end_off="752">
+<TYPE>Rloc-</TYPE>
+<CORRECTION></CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="0" end_par="1" end_off="4">
+<TYPE>Trans</TYPE>
+<CORRECTION>As</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="10" end_par="1" end_off="13">
+<TYPE>Vt</TYPE>
+<CORRECTION>has</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="27" end_par="1" end_off="30">
+<TYPE>ArtOrDet</TYPE>
+<CORRECTION></CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="46" end_par="1" end_off="51">
+<TYPE>Rloc-</TYPE>
+<CORRECTION></CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="130" end_par="1" end_off="133">
+<TYPE>ArtOrDet</TYPE>
+<CORRECTION></CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="155" end_par="1" end_off="158">
+<TYPE>Vt</TYPE>
+<CORRECTION>has</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="190" end_par="1" end_off="194">
+<TYPE>Mec</TYPE>
+<CORRECTION>form</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="195" end_par="1" end_off="203">
+<TYPE>WOinc</TYPE>
+<CORRECTION>can also</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="233" end_par="1" end_off="238">
+<TYPE>Trans</TYPE>
+<CORRECTION>because</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="392" end_par="1" end_off="395">
+<TYPE>ArtOrDet</TYPE>
+<CORRECTION></CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="495" end_par="1" end_off="500">
+<TYPE>Mec</TYPE>
+<CORRECTION>well-</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="500" end_par="1" end_off="504">
+<TYPE>Wform</TYPE>
+<CORRECTION>kept</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="522" end_par="1" end_off="527">
+<TYPE>Trans</TYPE>
+<CORRECTION>because</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="554" end_par="1" end_off="558">
+<TYPE>Spar</TYPE>
+<CORRECTION>use</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="565" end_par="1" end_off="568">
+<TYPE>Npos</TYPE>
+<CORRECTION>its</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="601" end_par="1" end_off="615">
+<TYPE>Rloc-</TYPE>
+<CORRECTION></CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="631" end_par="1" end_off="633">
+<TYPE>Prep</TYPE>
+<CORRECTION>from</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="634" end_par="1" end_off="637">
+<TYPE>Wform</TYPE>
+<CORRECTION>getting</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="660" end_par="1" end_off="664">
+<TYPE>SVA</TYPE>
+<CORRECTION>was</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="685" end_par="1" end_off="691">
+<TYPE>Nn</TYPE>
+<CORRECTION>usage</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="692" end_par="1" end_off="703">
+<TYPE>Rloc-</TYPE>
+<CORRECTION></CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="1" start_off="717" end_par="1" end_off="723">
+<TYPE>Nn</TYPE>
+<CORRECTION>usage</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="51" end_par="2" end_off="53">
+<TYPE>Vt</TYPE>
+<CORRECTION>has</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="154" end_par="2" end_off="156">
+<TYPE>Pref</TYPE>
+<CORRECTION>they</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="162" end_par="2" end_off="167">
+<TYPE>SVA</TYPE>
+<CORRECTION>help</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="206" end_par="2" end_off="212">
+<TYPE>Wci</TYPE>
+<CORRECTION>patient</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="213" end_par="2" end_off="215">
+<TYPE>Prep</TYPE>
+<CORRECTION></CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="216" end_par="2" end_off="218">
+<TYPE>Pref</TYPE>
+<CORRECTION></CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="233" end_par="2" end_off="238">
+<TYPE>Wci</TYPE>
+<CORRECTION>RFID</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="343" end_par="2" end_off="366">
+<TYPE>Wci</TYPE>
+<CORRECTION>in the emergency room</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="368" end_par="2" end_off="395">
+<TYPE>Rloc-</TYPE>
+<CORRECTION></CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="395" end_par="3" end_off="0">
+<TYPE>WOinc</TYPE>
+<CORRECTION>If their medical history is all recorded in the chip, the person's life may be saved</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="402" end_par="2" end_off="411">
+<TYPE>Rloc-</TYPE>
+<CORRECTION></CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="421" end_par="2" end_off="427">
+<TYPE>Npos</TYPE>
+<CORRECTION>person's</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="433" end_par="2" end_off="438">
+<TYPE>Trans</TYPE>
+<CORRECTION>If</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="2" start_off="461" end_par="2" end_off="464">
+<TYPE>Vt</TYPE>
+<CORRECTION>is</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="3" start_off="35" end_par="3" end_off="39">
+<TYPE>Vt</TYPE>
+<CORRECTION>is</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="3" start_off="35" end_par="3" end_off="39">
+<TYPE>SVA</TYPE>
+<CORRECTION></CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="3" start_off="465" end_par="3" end_off="468">
+<TYPE>ArtOrDet</TYPE>
+<CORRECTION></CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="4" start_off="15" end_par="4" end_off="21">
+<TYPE>Nn</TYPE>
+<CORRECTION>usage</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="4" start_off="36" end_par="4" end_off="40">
+<TYPE>Vt</TYPE>
+<CORRECTION>is</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="4" start_off="36" end_par="4" end_off="40">
+<TYPE>SVA</TYPE>
+<CORRECTION></CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="4" start_off="138" end_par="4" end_off="142">
+<TYPE>Vt</TYPE>
+<CORRECTION>is</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="4" start_off="138" end_par="4" end_off="142">
+<TYPE>SVA</TYPE>
+<CORRECTION></CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="4" start_off="174" end_par="4" end_off="179">
+<TYPE>Trans</TYPE>
+<CORRECTION>because</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="4" start_off="180" end_par="4" end_off="184">
+<TYPE>Pform</TYPE>
+<CORRECTION></CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="4" start_off="193" end_par="4" end_off="198">
+<TYPE>ArtOrDet</TYPE>
+<CORRECTION>this</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="4" start_off="211" end_par="4" end_off="215">
+<TYPE>Vt</TYPE>
+<CORRECTION>is</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="4" start_off="211" end_par="4" end_off="215">
+<TYPE>SVA</TYPE>
+<CORRECTION></CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="4" start_off="284" end_par="4" end_off="293">
+<TYPE>Mec</TYPE>
+<CORRECTION>Therefore,</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="4" start_off="372" end_par="4" end_off="376">
+<TYPE>Ssub</TYPE>
+<CORRECTION></CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="4" start_off="414" end_par="4" end_off="418">
+<TYPE>Vt</TYPE>
+<CORRECTION>has been</CORRECTION>
+</MISTAKE>
+<MISTAKE start_par="4" start_off="419" end_par="4" end_off="426">
+<TYPE>Vform</TYPE>
+<CORRECTION>mentioned</CORRECTION>
+</MISTAKE>
+</ANNOTATION>
+</DOC>
+</TRAINING_SET>

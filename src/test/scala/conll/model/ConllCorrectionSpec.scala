@@ -25,12 +25,6 @@ class ConllCorrectionSpec extends FlatSpec with Matchers {
     }
   }
 
-  it should "throw an IAE in case the first index of the span is larger than the second" in {
-    an [IllegalArgumentException] should be thrownBy {
-      ConllCorrection(0, (4, 4), "")
-    }
-  }
-
   it should "be able to accept a correction represented by a string" in {
     ConllCorrection(0, (1, 3), "the")
   }

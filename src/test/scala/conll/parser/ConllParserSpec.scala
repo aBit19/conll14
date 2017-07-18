@@ -60,14 +60,12 @@ class ConllParserSpec extends FlatSpec with Matchers {
     val preprocessedEssay: PreprocessedEssay = parser.makePreprocessedEssayFrom(essay)
   }
 
-  it should "change correction that spans two paragraphs ending at the begining of the fist accordingly" in {
-
-  }
-
   it should "return 1 PreprocessedEssay given testFile1" in {
     val preprocessedEssays = parser.parse()
     preprocessedEssays should have length 1
   }
+
+  it should "return a PreprocessedEssay "
 
   it should "return a size of two PreprocessedEssays given testFile2" in {
     val preprocessed = ConllParser(testFile2).parse()
@@ -80,4 +78,24 @@ class ConllParserSpec extends FlatSpec with Matchers {
     case List(Right(_), Left(_)) => true
     case _ => false
   })
+
+  "The parsed preprocessedEssay" should "not contain new line" in {
+    val preprocessedEssay = parser.parse()
+    assert(!preprocessedEssay.toString().contains("\n"))
+  }
+
+  it should "contain List of corrections in order: for example let cor1, cor2 be two conllCorrections if cor1" +
+    ".start_off  > cor2.start_off then cor1 should come first in the list also " in {
+    conll.util.Constants.getPreprocessedEssay
+      .paragraphsCorrections
+      .map(p => p._2.map(_.errorSpan._1))
+      .foreach(list => list.reverse shouldBe sorted)
+  }
+
+  it should "not contain two corrections starting from the same point in a given paragraph" in {
+    conll.util.Constants.getPreprocessedEssay
+      .paragraphsCorrections
+      .foreach(p => p._2.groupBy(_.errorSpan._1)
+        .values.foreach(e => e should have length 1))
+  }
 }

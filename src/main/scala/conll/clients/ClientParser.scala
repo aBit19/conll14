@@ -8,4 +8,5 @@ object ClientParser extends App {
   val essay = ConllParser(testFile).parse() match {
     case List(Right(x)) => x
   }
+  print()
 }

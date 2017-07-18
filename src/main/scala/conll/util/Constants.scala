@@ -5,7 +5,7 @@ import conll.parser.ConllParser
 
 object Constants {
   import java.io.File
-  private val path = new File(".").getAbsolutePath + "/resources/test_data/"
+  val path = new File(".").getAbsolutePath + "/resources/test_data/"
   val conll = new File(".").getAbsolutePath + "/resources/data_conll/official.sgml.xml"
   val testFile1: String = path + "/test.sgml.xml"
   val  testFile2: String = path + "/test_2.sgml.xml"
