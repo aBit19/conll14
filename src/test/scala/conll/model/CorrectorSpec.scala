@@ -9,8 +9,9 @@ class CorrectorSpec extends FlatSpec with Matchers {
     val corrector: Corrector = Corrector(PreprocessedEssay(List.empty, List.empty))
   }
 
-  it should "be able to apply the corrections and return a (erroneous essay, corrected essay)" in {
-    val (errored, corrected): (String, String) = Corrector(PreprocessedEssay(List.empty, List.empty)).applyCorrections
+  it should "be able to apply the corrections returning (preprocessedEssay, Either[List[ErrorMessage], CorrectedEssay])"in {
+    val (errored, corrected): (String, Either[List[ErrorMessage], String]) =
+      Corrector(PreprocessedEssay(List.empty, List.empty)).applyCorrections
   }
 
   it should "contain a map (Paragraph, Corrections of the key)" in {

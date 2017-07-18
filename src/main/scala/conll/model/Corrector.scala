@@ -7,35 +7,42 @@ private[conll] class Corrector private(preprocessedEssay: PreprocessedEssay) {
     val paragraphToItsIndex: Map[Paragraph, Int] = preprocessedEssay.paragraphs.zipWithIndex.toMap
     paragraphToItsIndex
       .map(pair => (pair._1, paragraphIndexToCorrection.get(pair._2)))
+      .filter(_._2.isDefined)
       .mapValues(_.get)
   }
 
-  def applyCorrections: (String, String) = (preprocessed, corrected)
+  def applyCorrections: (String, Either[List[ErrorMessage], String]) = (preprocessed, corrected)
 
   private val preprocessed: String = Corrector.makeStringEssayFromParagraphs(preprocessedEssay.paragraphs)
-  private def corrected : String = Corrector.makeStringEssayFromParagraphs(correctEssay())
-  private def correctEssay(): List[Paragraph] =
+
+  private def corrected : Either[List[ErrorMessage], String] = {
+    val correctedPar: List[Either[ErrorMessage, Paragraph]] = correctEssay
+    if (!correctedPar.exists(_.isLeft))
+      Right((correctedPar :\ "") ((either, par) => either.getOrElse("") + par))
+    else
+      Left(correctedPar.filter(_.isLeft).map(_.getOrElse("")))
+  }
+  private def correctEssay: List[Either[ErrorMessage, Paragraph]] =
     paragraphToCorrections.toList.map(pair => correctParagraph(pair._1, pair._2))
 
-  private def correctParagraph(paragraph: Paragraph, corrections: List[ConllCorrection]): Paragraph = {
+  private def correctParagraph(paragraph: Paragraph, corrections: List[ConllCorrection]):
+  Either[ErrorMessage, Paragraph] = {
     import Corrector._
     var start_off, start_end: Int = 0
     var correction = ""
     val stringBuilder = new StringBuilder(paragraph)
-    for (conllCorrection <- prepareCorrections(corrections)) {
-      try {
+    try {
+      for (conllCorrection <- prepareCorrections(corrections)) {
         start_off = conllCorrection.errorSpan._1
         start_end = conllCorrection.errorSpan._2
         correction = conllCorrection.correction
         stringBuilder.delete(start_off, start_end)
         stringBuilder.insert(start_off, " " + correction)
-      } catch {
-        case ex: Exception => {
-          println(s"$start_off - $start_end - $correction")
-        }
       }
+      Right(stringBuilder.result().replaceAll("  ", " "))
+    } catch {
+      case ex: Exception => Left(s"${ex.getMessage} in ([$start_off - $start_end]: $correction-> $paragraph")
     }
-    stringBuilder.result().replaceAll("  ", " ")
   }
 
 }

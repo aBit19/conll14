@@ -21,6 +21,7 @@ class PreprocessedEssaySpec extends FlatSpec with Matchers {
     }
   }
 
-  it should "be able to apply its corrections and return (preprocessed essay, corrected)" in {
-    val essay: (String, String) = PreprocessedEssay(List.empty, List.empty).applyCorrections}
+  it should "be able to apply its corrections and return an Option[(preprocessed essay, corrected)]" in {
+    val essay: Option[(String, String)] = PreprocessedEssay(List.empty, List.empty).applyCorrections
+  }
 }

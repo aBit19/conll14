@@ -44,9 +44,10 @@ object ConllParser {
   private[conll] def extractCorrections(nodeSeq: NodeSeq): List[ConllCorrection] = extractFrom(nodeSeq)(corrections)
   private def corrections(node: xml.Node): ConllCorrection = {
     val (start, end)  = ((node \ "@start_par").text.toInt, (node \ "@end_par").text.toInt)
-    if (start != end) throw new IllegalArgumentException(s"Span in two paragraphs: $start - $end ")
-    val (start_off, end_off)  = ((node \ "@start_off").text.toInt, (node \ "@end_off").text.toInt)
     val correction = node  \ "CORRECTION"
+    val (start_off, end_off)  = ((node \ "@start_off").text.toInt, (node \ "@end_off").text.toInt)
+    if (start != end) throw
+      new IllegalArgumentException(s"Span in two paragraphs: $start - $end: at ($start_off $end_off): $correction")
     ConllCorrection(start, (start_off, end_off), if (correction.isEmpty) " " else correction.text )
   }
 
