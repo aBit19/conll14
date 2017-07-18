@@ -1,7 +1,7 @@
 package conll.model
 
-class PreprocessedEssay private(val paragraphs: List[Paragraph], val corrections: List[ConllCorrection]) {
-  override val toString : String = (paragraphs :\ "") (_.trim + _.trim)
+class PreprocessedEssay private(val paragraphsCorrections: List[(Paragraph, List[ConllCorrection])]) {
+  override val toString : String = (paragraphsCorrections :\ "") ((pair, string) => pair._1 + string)
   private def corrector: Corrector = Corrector(this)
   def applyCorrections: Option[(String, String)] = {
     val corrections =  corrector.applyCorrections
@@ -10,12 +10,12 @@ class PreprocessedEssay private(val paragraphs: List[Paragraph], val corrections
     else
       None
   }
+
+  def getParagraphs: List[Paragraph] = paragraphsCorrections.map(_._1)
 }
 
 object PreprocessedEssay {
-  def apply(essay: List[Paragraph], corrections: List[ConllCorrection]): PreprocessedEssay =
-    if (essay == null || corrections == null)
-      throw new NullPointerException
-  else
-      new PreprocessedEssay(essay, corrections)
+  def apply(essay: List[(Paragraph, List[ConllCorrection])]): PreprocessedEssay =
+    if (essay == null) throw new NullPointerException("Null PreprocessedEssay")
+    else new PreprocessedEssay(essay)
 }

@@ -34,30 +34,34 @@ class ConllParserSpec extends FlatSpec with Matchers {
   }
 
   it should "return an xml.NodeSeq representing the entries of the file when loadEntries()" in {
-    val entries: xml.NodeSeq = parser.essayEntries
+    val entries: xml.NodeSeq = parser.xmlEntries
   }
 
   it should "return 1 entry given testFile1" in {
-    parser.essayEntries.size should be (1)
+    parser.xmlEntries.size should be (1)
   }
 
   it should "return a List[(paragraphs: xml.NodeSeq, corrections: xml.NodeSeq)] when loadPairs()" in {
-    val essays: List[(NodeSeq, NodeSeq)] = parser.loadEssayCorrectionPairs()
+    val essays: List[(NodeSeq, NodeSeq)] = parser.loadEssayCorrectionsPairs()
   }
 
   it should "return 4 paragraphs for first essay given testFile1" in {
-    val (paragraphs, _) = parser.loadEssayCorrectionPairs().head
+    val (paragraphs, _) = parser.loadEssayCorrectionsPairs().head
     paragraphs should have size 4
   }
 
   it should "return 97 correction for the first essay" in {
-    val (_, corrections) = parser.loadEssayCorrectionPairs().head
+    val (_, corrections) = parser.loadEssayCorrectionsPairs().head
     corrections should have size 97
   }
 
   it should "return a PreprocessedEssay given a (NodeSeq, NodeSeq)" in {
-    val essay: (NodeSeq, NodeSeq) = parser.loadEssayCorrectionPairs().head
-    val preprocessedEssay: PreprocessedEssay = parser.makePreprocessedEssay(essay)
+    val essay: (NodeSeq, NodeSeq) = parser.loadEssayCorrectionsPairs().head
+    val preprocessedEssay: PreprocessedEssay = parser.makePreprocessedEssayFrom(essay)
+  }
+
+  it should "change correction that spans two paragraphs ending at the begining of the fist accordingly" in {
+
   }
 
   it should "return 1 PreprocessedEssay given testFile1" in {
