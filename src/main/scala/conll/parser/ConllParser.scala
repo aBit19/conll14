@@ -87,12 +87,15 @@ object ConllParser {
             cor2.correction
           else if (cor2 == cor1)
             cor1.correction
-          else throw new NullPointerException(s"Both of them contain corrections $duplicate")
+          else  {
+            if (cor1.errorSpan._2 >= cor2.errorSpan._2) cor1.correction else cor2.correction
+          }
         }
         ConllCorrection(cor1.paragraph, (cor1.errorSpan._1, start_off), correction)
       }
       case _ => throw new IllegalArgumentException(s"More than expected corrections: $duplicate")
     }
+
 
   private def extractFrom[T](nodeSeq: NodeSeq)(f: xml.Node => T): List[T] =
     (List.empty[T] /: nodeSeq) ((list, node) => f(node) :: list).reverse
