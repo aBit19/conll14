@@ -1,5 +1,7 @@
 package conll.model
 
+import conll.util.Corrector
+
 class PreprocessedEssay private(val paragraphsCorrections: List[(Paragraph, List[ConllCorrection])]) {
   override val toString : String = (paragraphsCorrections :\ "") ((pair, string) => pair._1 + string)
   private def corrector: Corrector = Corrector(this)

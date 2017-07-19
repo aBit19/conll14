@@ -84,18 +84,4 @@ class ConllParserSpec extends FlatSpec with Matchers {
     assert(!preprocessedEssay.toString().contains("\n"))
   }
 
-  it should "contain List of corrections in order: for example let cor1, cor2 be two conllCorrections if cor1" +
-    ".start_off  > cor2.start_off then cor1 should come first in the list also " in {
-    conll.util.Constants.getPreprocessedEssay
-      .paragraphsCorrections
-      .map(p => p._2.map(_.errorSpan._1))
-      .foreach(list => list.reverse shouldBe sorted)
-  }
-
-  it should "not contain two corrections starting from the same point in a given paragraph" in {
-    conll.util.Constants.getPreprocessedEssay
-      .paragraphsCorrections
-      .foreach(p => p._2.groupBy(_.errorSpan._1)
-        .values.foreach(e => e should have length 1))
-  }
 }

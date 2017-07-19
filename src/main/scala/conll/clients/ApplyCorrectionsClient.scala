@@ -1,13 +1,13 @@
 package conll.clients
 
-import conll.model.{Corrector, PreprocessedEssay}
-import conll.util.Constants
+import conll.model.PreprocessedEssay
+import conll.util.{Constants, Corrector}
 
 object ApplyCorrectionsClient extends App {
 
   val essay: PreprocessedEssay = Constants.getConllParser1.parse() match {case List(Right(x)) => x}
   val corrector = Corrector(essay)
   val (pre, corrected) = corrector.applyCorrections
-  print(corrected.getOrElse("").split('.').toList.mkString("\n"))
+  print(corrected getOrElse "" split '.'  mkString "\n" )
 }
 

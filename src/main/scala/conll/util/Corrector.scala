@@ -1,5 +1,6 @@
-package conll.model
+package conll.util
 
+import conll.model.{ConllCorrection, ErrorMessage, Paragraph, PreprocessedEssay}
 
 private[conll] class Corrector private(preprocessedEssay: PreprocessedEssay) {
 
@@ -40,7 +41,7 @@ private[conll] object Corrector {
       for (conllCorrection <- corrections) {
         applyCorrectionMutatingStringBuilder(conllCorrection, stringBuilder)
       }
-      Right(stringBuilder.result().replaceAll("  ", " "))
+      Right(stringBuilder.result())
     } catch {
       case ex: Exception => Left(s"${ex.getMessage} in: ($paragraph")
     }
@@ -58,7 +59,7 @@ private[conll] object Corrector {
     try {
       val (start_off, start_end) = conllCorrection.errorSpan
       stringBuilder.delete(start_off, start_end)
-      stringBuilder.insert(start_off, " " + conllCorrection.correction)
+      stringBuilder.insert(start_off,   " " + conllCorrection.correction)
     } catch  {
       case ex: Exception => new IllegalArgumentException(s"${conllCorrection.errorSpan} - ${conllCorrection.correction}")
     }
@@ -66,7 +67,7 @@ private[conll] object Corrector {
 
   private def concatParagraphs(list: List[Either[ErrorMessage, Paragraph]]): String = {
     //Assumption the list contains only Right
-    ("" /: list) ((paragraph: Paragraph, either) => paragraph + either.getOrElse(""))
+    ("" /: list) ((paragraph: Paragraph, either) => paragraph.replaceAll("  ", " ") + either.getOrElse(""))
   }
 
   private def getErrors(either: List[Either[ErrorMessage, Paragraph]]): List[ErrorMessage] = {

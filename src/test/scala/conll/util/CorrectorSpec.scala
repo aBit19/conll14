@@ -1,7 +1,7 @@
-package conll.model
+package conll.util
 
+import conll.model.{ErrorMessage, PreprocessedEssay}
 import org.scalatest.{FlatSpec, Matchers}
-import conll.util.Constants
 
 class CorrectorSpec extends FlatSpec with Matchers {
 
