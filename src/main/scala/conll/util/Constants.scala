@@ -5,12 +5,12 @@ import conll.parser.ConllParser
 
 object Constants {
   import java.io.File
-  val path = new File(".").getAbsolutePath + "/resources/test_data/"
-  val conll = new File(".").getAbsolutePath + "/resources/data_conll/official.sgml.xml"
-  val testFile1: String = path + "/test.sgml.xml"
-  val  testFile2: String = path + "/test_2.sgml.xml"
-  def getConllParser1 = ConllParser(testFile1)
-  def getConllParser2 = ConllParser(testFile2)
+  val TEST_PATH: String = new File(".").getAbsolutePath + "/resources/test_data/"
+  val CONLL_PATH: String = new File(".").getAbsolutePath + "/resources/data_conll/official.sgml.xml"
+  val TEST_FILE_1: String = TEST_PATH + "/test.sgml.xml"
+  val  TEST_FILE_2: String = TEST_PATH + "/test_2.sgml.xml"
+  def getConllParser1 = ConllParser(TEST_FILE_1)
+  def getConllParser2 = ConllParser(TEST_FILE_2)
   val getPreprocessedEssay: PreprocessedEssay = getConllParser1.parse() match {case List(Right(x)) => x}
   def sequentialForAll[T](list: List[T], test: (T, T) => Boolean): Boolean = {
     def helper(elem: T, rem: List[T]): Boolean = {
