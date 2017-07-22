@@ -11,7 +11,7 @@ object Constants {
   val  TEST_FILE_2: String = TEST_PATH + "/test_2.sgml.xml"
   def getConllParser1 = ConllParser(TEST_FILE_1)
   def getConllParser2 = ConllParser(TEST_FILE_2)
-  val getPreprocessedEssay: PreprocessedEssay = getConllParser1.parse() match {case List(Right(x)) => x}
+  lazy val getPreprocessedEssay: PreprocessedEssay = getConllParser1.parse() match {case List(Right(x)) => x}
   def sequentialForAll[T](list: List[T], test: (T, T) => Boolean): Boolean = {
     def helper(elem: T, rem: List[T]): Boolean = {
       rem match {

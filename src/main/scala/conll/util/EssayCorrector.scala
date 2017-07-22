@@ -2,27 +2,27 @@ package conll.util
 
 import conll.model.{ConllCorrection, ErrorMessage, Paragraph, PreprocessedEssay}
 
-private[conll] class Corrector private(preprocessedEssay: PreprocessedEssay) {
+private[conll] class EssayCorrector private(preprocessedEssay: PreprocessedEssay) {
 
-  private val preprocessed: String = Corrector.makeStringEssayFromParagraphs(preprocessedEssay.getParagraphs)
+  private val preprocessed: String = EssayCorrector.makeStringEssayFromParagraphs(preprocessedEssay.getParagraphs)
 
   def applyCorrections: (String, Either[List[ErrorMessage], String]) = (preprocessed, corrected)
 
   private def corrected : Either[List[ErrorMessage], String] = {
     val correctedPar: List[Either[ErrorMessage, Paragraph]] = correctEssay()
     if (!correctedPar.exists(_.isLeft))
-      Right(Corrector.concatParagraphs(correctedPar))
+      Right(EssayCorrector.concatParagraphs(correctedPar))
     else
-      Left(Corrector.getErrors(correctedPar))
+      Left(EssayCorrector.getErrors(correctedPar))
   }
 
   private def correctEssay(): List[Either[ErrorMessage, Paragraph]] =
-    preprocessedEssay.paragraphsCorrections.map(pair => Corrector.correctParagraph(pair._1, pair._2))
+    preprocessedEssay.paragraphsCorrections.map(pair => EssayCorrector.correctParagraph(pair._1, pair._2))
 
 }
 
-private[conll] object Corrector {
-  def apply(preprocessedEssay: PreprocessedEssay): Corrector = new Corrector(preprocessedEssay)
+private[conll] object EssayCorrector {
+  def apply(preprocessedEssay: PreprocessedEssay): EssayCorrector = new EssayCorrector(preprocessedEssay)
   def makeStringEssayFromParagraphs(list: List[Paragraph]): String = (list:\ "")(_ .trim + _.trim)
 
   private[conll] def correctParagraph(paragraph: Paragraph, list: List[ConllCorrection]): Either[ErrorMessage, Paragraph] = {

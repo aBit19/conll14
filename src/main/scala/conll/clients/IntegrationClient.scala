@@ -2,7 +2,10 @@ package conll.clients
 
 import conll.parser.ConllParser
 import conll.util.Constants
+import service.SequenceAlignmentService
+
 object IntegrationClient extends App {
+  val editDistance = SequenceAlignmentService.editDistance
   val parser = ConllParser(Constants.CONLL_PATH)
   val essays = parser.parse()
 
