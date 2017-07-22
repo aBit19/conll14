@@ -94,14 +94,14 @@ class TrainingSetWriterSpec extends FlatSpec with  Matchers with BeforeAndAfterE
     val (filename, expectedInputFile, expectedTargetFile) = makeFilenameAndFiles("9")
     val writer = TrainingSetWriter(filename, ("Second Sentence. Another one", "Second Sentence. Another"),
       distanceThreshold = 1)
-    writer.inputTargetSentencefilter = (_, _) => true
+    writer.inputTargetSentenceFilter = (_, _) => true
   }
 
   it should "be able to apply the given predicate" in {
     val (filename, inputFileExpected, targetFileExpected) = makeFilenameAndFiles("9")
     val writer = TrainingSetWriter(filename,
       ("Second Sentence. This sentence should not printed", "Second Sentence. Another"))
-    writer.inputTargetSentencefilter = (input, target) => math.abs(input.length - target.length) < 4
+    writer.inputTargetSentenceFilter = (input, target) => math.abs(input.length - target.length) < 4
     writer.print()
 
     readFileContents(inputFileExpected) shouldEqual "Second Sentence."

@@ -11,16 +11,16 @@ class TrainingSetWriter private(filename: String, trainingPair: (String, String)
 
   private val inputFilename = s"$filename.input"
   private val targetFilename = s"$filename.target"
-  private val isDistanceThresholdDefined = distanceThreshold > 0
-  var inputTargetSentencefilter: (String, String) => Boolean = {case (x, y) => true}
+  private val isDistanceThresholdDefined = distanceThreshold >= 0
+  var inputTargetSentenceFilter: (String, String) => Boolean = {case (x, y) => true}
   private val (inputSentences, targetSentences): (List[String], List[String]) =
     (extractSentences(trainingPair._1), extractSentences(trainingPair._2))
-  private val pairsHaveDifferentNumberOfSentences = inputSentences.size != targetSentences.size
+  private val pairsHaveDifferentSize = inputSentences.size != targetSentences.size
 
   def print(): Unit = {
     if (exist(filename))
       throw new IllegalArgumentException(s"Files already exist $filename.input/target")
-    else if (!printIfDifferentSize && pairsHaveDifferentNumberOfSentences) return
+    else if (!printIfDifferentSize && pairsHaveDifferentSize) return
     else writeFileContents()
   }
 
@@ -31,8 +31,8 @@ class TrainingSetWriter private(filename: String, trainingPair: (String, String)
   }
 
   private def filterSentences(): (String, String) = {
-    val sentenceFilter: (String, String) => Boolean = if (isDistanceThresholdDefined) (s1, s2) => inputTargetSentencefilter(s1, s2) &&
-      editDistance.align(s1, s2) < distanceThreshold else inputTargetSentencefilter
+    val sentenceFilter: (String, String) => Boolean = if (isDistanceThresholdDefined) (s1, s2) => inputTargetSentenceFilter(s1, s2) &&
+      editDistance.align(s1, s2) < distanceThreshold else inputTargetSentenceFilter
     val (input, target) = TrainingSetWriter.filterSentences(inputSentences, targetSentences)(sentenceFilter)
     (TrainingSetWriter.makeStringFromList(input), makeStringFromList(target))
   }
