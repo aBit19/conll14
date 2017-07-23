@@ -27,19 +27,12 @@ class CorrectionCleanerSpec extends FlatSpec with Matchers{
     list should have length 2
   }
 
-  it should "contain List of corrections in order: for example let cor1, cor2 be two conllCorrections if cor1" +
-    ".start_off  > cor2.start_off then cor1 should come first in the list also " in {
+  it should "contain List of corrections in order: for example let cor1, cor2 be two conllCorrections " +
+    "if cor1.start_off  > cor2.start_off then cor1 should come first in the list" in {
     val list = CorrectionCleaner.clean(CorrectionCleaner.clean(ConllCorrection(0, (1, 4), "") ::
       getCorrectionsToBeReduced))
     list.map(_.errorSpan._1).reverse shouldBe sorted
   }
-
-  /* it should "not contain two corrections starting from the same point in a given paragraph" in {
-    conll.util.Constants.getPreprocessedEssay
-      .paragraphsCorrections
-      .foreach(p => p._2.groupBy(_.errorSpan._1)
-        .values.foreach(e => e should have length 1))
-  }*/
 
   private val getCorrectionsToBeReduced: List[ConllCorrection] = {
     List(

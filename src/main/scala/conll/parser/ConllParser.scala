@@ -47,8 +47,10 @@ object ConllParser {
 
   private[conll] def extractParagraphsFrom(nodeSeq: NodeSeq): List[Paragraph] =
     extractFrom(nodeSeq)(_.text.replaceAll("\n", ""))
+
   private[conll] def extractConllCorrectionsFrom(nodeSeq: NodeSeq): List[ConllCorrection] =
     extractFrom(nodeSeq)(corrections)
+
   private def corrections(node: xml.Node): ConllCorrection = {
     val (start, end)  = ((node \ "@start_par").text.toInt, (node \ "@end_par").text.toInt)
     val correction = node  \ "CORRECTION"
