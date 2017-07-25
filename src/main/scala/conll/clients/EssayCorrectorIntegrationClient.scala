@@ -6,7 +6,7 @@ import service.SequenceAlignmentService
 
 object EssayCorrectorIntegrationClient extends App {
   val editDistance = SequenceAlignmentService.editDistance
-  val parser = ConllParser(Constants.CONLL_PATH)
+  val parser = ConllParser(Constants.CONLL_PATH_2013_TEST_SET)
   val essays = parser.parse()
 
   val corrected = essays

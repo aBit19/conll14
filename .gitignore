@@ -2,4 +2,5 @@
 .idea/
 data_conll/
 target/
+resources/test_data/nucle3.2*
 *.swp

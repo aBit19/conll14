@@ -5,8 +5,9 @@ import conll.util.{Constants, PairCleaner}
 import conll.writer.TrainingSetWriter
 
 object IntegrationEndToEnd extends App {
-  val parser = ConllParser(Constants.CONLL_PATH)
+  val parser = ConllParser(Constants.CONLL_PATH_2014_TRAINING_SET)
   val preprocessedEssays = parser.parse()
+  print()
   val essays: List[(List[String], List[String])] =
     for {
     optionalPrepr <- preprocessedEssays
