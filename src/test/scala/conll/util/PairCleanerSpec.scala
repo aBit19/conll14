@@ -36,7 +36,7 @@ class PairCleanerSpec extends FlatSpec with Matchers {
   it should "return the cleaned texts not containing sentences that fail the given predicate" in {
     val cleaner = PairCleaner(("One Sentence. Second Sentence.", "One Sentencce. Second."),
       (s1, s2) => math.abs(s1.length - s2.length) < 3 ).clean()
-    cleaner shouldEqual Some(List("One Sentence."), List("One Sentencce."))
+    cleaner shouldEqual Some(List("One Sentence ."), List("One Sentencce ."))
   }
 
   it should "return None when clean and all of the pairs fail the predicate" in {
@@ -48,7 +48,7 @@ class PairCleanerSpec extends FlatSpec with Matchers {
   it should "not print pairs exceeding the edit distance limit printed" in {
     val  cleaner = PairCleaner(("One Sentence. Sentence. Third.", "Another one. Sentenc. Thied"),
       editDistanceLimit = 1).clean()
-    cleaner shouldEqual Some((List("Sentence.", "Third."), List("Sentenc.", "Thied.")))
+    cleaner shouldEqual Some((List("Sentence .", "Third ."), List("Sentenc .", "Thied .")))
   }
 
 }

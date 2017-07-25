@@ -30,7 +30,7 @@ object PairCleaner {
     new PairCleaner(training, sentenceFilter, editDistanceLimit)
 
   private def extractSentences(text: String): List[String] = {
-    text.split('.').map(_.trim + ".").toList
+    text.split('.').map(_.trim + " .").toList
   }
 
 }
